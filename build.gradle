@@ -34,6 +34,7 @@ apply plugin: 'forge'
 
 targetCompatibility = JavaVersion.VERSION_1_6
 
+version = config.version
 group = config.group
 archivesBaseName = config.archivesBaseName
 
