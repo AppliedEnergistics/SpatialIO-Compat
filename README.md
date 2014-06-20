@@ -24,15 +24,12 @@ If you wish to submit a pull request to further expand and enhance the compatibi
 If you encounter an issue with Spatial IO and a TileEntity enabled by this list please let us know, so we can remove from the supported list and mark it as not supported, it is important that we keep this list as accurate and up-to-date as possible.
 
 ### Compiling and packaging Spatial IO Compat
-1. Download Forge from here: http://files.minecraftforge.net/
-2. Unzip into a new folder.
-3. Clone this repo into a new folder.
-4. Move the repo folder contents over the forge folders contents.
-5. Use Gradle to setup work space.
+1. Clone this repo into a new folder.
+2. Use Gradle to setup work space.
  * gradlew setupDecompWorkspace
  * gradlew eclipse
-6. Optional: Make Changes
-7. gradlew build
+3. Optional: Make Changes
+4. gradlew build
  * binaries will be output into build/lib/
 
 Philosophy
