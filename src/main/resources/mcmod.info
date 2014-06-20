@@ -1,0 +1,16 @@
+[
+{
+  "modid": "spatialio-compat",
+  "name": "Spatial IO Compat",
+  "description": "Spatial IO Compatability Mod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["AlgorithmX2","Contributors"],
+  "credits": "The community and testers that saught to put effort into the testing and validation of mod.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,16 @@
+.gradle
+gradle
+build
+eclipse
+gradlew
+CREDITS-fml.txt
+forge-*
+gradlew
+gradlew.bat
+LICENSE-fml.txt
+MinecraftForge-*
+README.txt
+src/main/java/com
+.classpath
+.project
+.settings
