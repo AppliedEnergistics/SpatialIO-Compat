@@ -34,7 +34,7 @@ apply plugin: 'forge'
 
 targetCompatibility = JavaVersion.VERSION_1_6
 
-version = config.version
+version="build-$System.env.DRONE_BUILD_NUMBER"
 group = config.group
 archivesBaseName = config.archivesBaseName
 
