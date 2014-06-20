@@ -5,14 +5,16 @@ Welcome to the AE2 Spatial IO Compatibility Project.
 
 The purpose of this project is to create a community driven effort to test and mark TileEntities as compatible.
 
-Mods that Support Spatial IO Natively
-=========================
+### Mods that Support Spatial IO Natively
 
-	AE2 ( obviously; AE2 enables moving of vanilla tile entities. )
-	BuildCraft 6+
-	Rotatable Blocks
-	Mine Factory Reloaded
-	Tinkers Construct
+1. AE2 ( obviously; AE2 enables moving of vanilla tile entities. )
+2. BuildCraft 6+
+3. Rotatable Blocks
+4. Mine Factory Reloaded
+5. Tinkers Construct
+
+### Download Builds
+Builds are automtaically done at drone.io click here: [![Build Status](https://drone.io/github.com/AlgorithmX2/SpatialIO-Compat/status.png)](https://drone.io/github.com/AlgorithmX2/SpatialIO-Compat/latest)
 
 Contributing to the Effort
 =========================
