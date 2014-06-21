@@ -14,7 +14,7 @@ The purpose of this project is to create a community driven effort to test and m
 5. Tinkers Construct
 
 ### Download Builds
-Builds are automtaically done at drone.io click here: [![Build Status](https://drone.io/github.com/AlgorithmX2/SpatialIO-Compat/status.png)](https://drone.io/github.com/AlgorithmX2/SpatialIO-Compat/latest)
+Builds are automtaically done at drone.io [click here](https://drone.io/github.com/AlgorithmX2/SpatialIO-Compat/files): [![Build Status](https://drone.io/github.com/AlgorithmX2/SpatialIO-Compat/status.png)](https://drone.io/github.com/AlgorithmX2/SpatialIO-Compat/latest)
 
 Contributing to the Effort
 =========================
