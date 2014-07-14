@@ -10,3 +10,6 @@ src/main/java/com
 .classpath
 .project
 .settings
+*.iml
+*.ipr
+*.iws

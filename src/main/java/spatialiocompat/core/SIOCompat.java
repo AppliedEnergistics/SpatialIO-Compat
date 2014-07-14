@@ -61,7 +61,19 @@ public class SIOCompat
 		 */
 		addTileEntity( "cpw.mods.ironchest.TileEntityIronChest" );
 
-	}
+        /**
+         * Thaumcraft
+         *
+         * Tested by J3FF97 - no issues found.
+         * Tuesday, July 15, 2014
+         *
+         * Includes everything. Aspects are retained, everything still functions.
+         * NOTE: Did not test on multiblocks. Do not try them if you don't want to lose your stuff. (High probability of not working/crashing)
+         */
+        addTileEntity("thaumcraft.common.tiles.TileThaumcraft");
+
+
+    }
 
 	@EventHandler
 	void PostInit(FMLPostInitializationEvent event)
