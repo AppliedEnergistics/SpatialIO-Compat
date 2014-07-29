@@ -3,6 +3,7 @@ package spatialiocompat.core;
 import spatialiocompat.modules.CarpenterBlocks;
 import spatialiocompat.modules.IronChests;
 import spatialiocompat.modules.Thaumcraft;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -27,9 +28,14 @@ public class SIOCompat
     @EventHandler
     void Init(FMLInitializationEvent event)
     {
-        CarpenterBlocks.register();
-        IronChests.register();
-        Thaumcraft.register();
+        if ( Loader.isModLoaded( "CarpentersBlocks" ) )
+            CarpenterBlocks.register();
+        
+        if ( Loader.isModLoaded( "IronChest" ) )
+            IronChests.register();
+        
+        if ( Loader.isModLoaded( "Thaumcraft" ) )
+    		Thaumcraft.register();
     }
 
 	@EventHandler
