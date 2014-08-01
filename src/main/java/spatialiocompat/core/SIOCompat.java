@@ -1,14 +1,15 @@
 package spatialiocompat.core;
 
-import spatialiocompat.modules.CarpenterBlocks;
-import spatialiocompat.modules.IronChests;
-import spatialiocompat.modules.Thaumcraft;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import spatialiocompat.modules.CarpenterBlocks;
+import spatialiocompat.modules.IronChests;
+import spatialiocompat.modules.Jabba;
+import spatialiocompat.modules.Thaumcraft;
 
 @Mod(modid = SIOCompat.modid, name = SIOCompat.name, version = SIOCompat.version, dependencies = SIOCompat.dependencies)
 public class SIOCompat 
@@ -36,6 +37,9 @@ public class SIOCompat
         
         if ( Loader.isModLoaded( "Thaumcraft" ) )
     		Thaumcraft.register();
+
+        if ( Loader.isModLoaded( "JABBA" ) )
+            Jabba.register();
     }
 
 	@EventHandler
