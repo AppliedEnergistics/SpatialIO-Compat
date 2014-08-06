@@ -12,6 +12,7 @@ The purpose of this project is to create a community driven effort to test and m
 3. Rotatable Blocks
 4. Mine Factory Reloaded
 5. Tinkers Construct
+6. ExtraCells 2
 
 ### Download Builds
 Builds are automtaically done at drone.io [click here](https://drone.io/github.com/AlgorithmX2/SpatialIO-Compat/files): [![Build Status](https://drone.io/github.com/AlgorithmX2/SpatialIO-Compat/status.png)](https://drone.io/github.com/AlgorithmX2/SpatialIO-Compat/latest)
