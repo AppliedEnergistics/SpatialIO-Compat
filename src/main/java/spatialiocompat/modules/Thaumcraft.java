@@ -1,6 +1,8 @@
 package spatialiocompat.modules;
 
 import spatialiocompat.core.SIOBaseModule;
+import spatialiocompat.core.SIOCompatMarker;
+
 
 /**
  * Thaumcraft
@@ -13,38 +15,59 @@ import spatialiocompat.core.SIOBaseModule;
  */
 public class Thaumcraft extends SIOBaseModule
 {
-	final private static String Prefix = "thaumcraft.common.tiles.";
+	final private static String TC_PREFIX = "thaumcraft.common.tiles.";
 
-    public static void register()
+	public Thaumcraft( SIOCompatMarker marker )
+	{
+		super( "Thaumcraft", marker );
+	}
+
+	@Override
+	public void register()
     {
-    	addTileEntity(Prefix + "TileAlchemyFurnace");
-        addTileEntity(Prefix + "TileAlembic");
-        addTileEntity(Prefix + "TileArcaneBore");
-        addTileEntity(Prefix + "TileArcaneFurnace");
-        addTileEntity(Prefix + "TileArcaneLamp");
-        addTileEntity(Prefix + "TileArcaneLampFertility");
-        addTileEntity(Prefix + "TileArcaneLampGrowth");
-        addTileEntity(Prefix + "TileArcaneLampLight");
-        addTileEntity(Prefix + "TileArcaneWorkbench");
-        addTileEntity(Prefix + "TileBellows");
-        addTileEntity(Prefix + "TileBrainbox");
-        addTileEntity(Prefix + "TileCentrifuge");
-        addTileEntity(Prefix + "TileChestHungry");
-        addTileEntity(Prefix + "TileCrucible");
-        addTileEntity(Prefix + "TileCrystal");
-        addTileEntity(Prefix + "TileDeconstrucionTable");
-        addTileEntity(Prefix + "TileJar");
-        addTileEntity(Prefix + "TileLifter");
-        addTileEntity(Prefix + "TileMagicBox");
-        addTileEntity(Prefix + "TileMagicWorkbench");
-        addTileEntity(Prefix + "TileMirror");
-        addTileEntity(Prefix + "TileMirrorEssentia");
-        addTileEntity(Prefix + "TileNitor");
-        addTileEntity(Prefix + "TileNode");
-        addTileEntity(Prefix + "TileNodeStabilizer");
-        addTileEntity(Prefix + "TileSensor");
-        addTileEntity(Prefix + "TileTube");
-        addTileEntity(Prefix + "TileTubeBuffer");
-        addTileEntity(Prefix + "TileWandPedestal");
+		this.addTileEntity( TC_PREFIX + "TileAlchemyFurnace");
+		this.addTileEntity( TC_PREFIX + "TileAlembic");
+		this.addTileEntity( TC_PREFIX + "TileArcaneBore");
+		this.addTileEntity( TC_PREFIX + "TileArcaneFurnace");
+		this.addTileEntity( TC_PREFIX + "TileArcaneLamp");
+		this.addTileEntity( TC_PREFIX + "TileArcaneLampFertility");
+		this.addTileEntity( TC_PREFIX + "TileArcaneLampGrowth");
+		this.addTileEntity( TC_PREFIX + "TileArcaneLampLight");
+		this.addTileEntity( TC_PREFIX + "TileArcaneWorkbench");
+		this.addTileEntity( TC_PREFIX + "TileBellows");
+		this.addTileEntity( TC_PREFIX + "TileBrainbox");
+		this.addTileEntity( TC_PREFIX + "TileCentrifuge");
+		this.addTileEntity( TC_PREFIX + "TileChestHungry");
+		this.addTileEntity( TC_PREFIX + "TileCrucible");
+		this.addTileEntity( TC_PREFIX + "TileCrystal");
+		this.addTileEntity( TC_PREFIX + "TileDeconstrucionTable");
+		this.addTileEntity( TC_PREFIX + "TileJar");
+		this.addTileEntity( TC_PREFIX + "TileLifter");
+		this.addTileEntity( TC_PREFIX + "TileMagicBox");
+		this.addTileEntity( TC_PREFIX + "TileMagicWorkbench");
+		this.addTileEntity( TC_PREFIX + "TileMirror");
+		this.addTileEntity( TC_PREFIX + "TileMirrorEssentia");
+		this.addTileEntity( TC_PREFIX + "TileNitor");
+		this.addTileEntity( TC_PREFIX + "TileNode");
+		this.addTileEntity( TC_PREFIX + "TileNodeStabilizer");
+		this.addTileEntity( TC_PREFIX + "TileSensor");
+		this.addTileEntity( TC_PREFIX + "TileTube");
+		this.addTileEntity( TC_PREFIX + "TileTubeBuffer");
+		this.addTileEntity( TC_PREFIX + "TileWandPedestal");
+
+		/**
+		 * Added since the new 4.2.2.1 version and before
+		 *
+		 * Tested by TCzelusniak
+		 *
+		 * Friday, December 26, 2014
+		 */
+		this.addTileEntity( TC_PREFIX + "TileEldritchAltar");
+		this.addTileEntity( TC_PREFIX + "TileEldritchCap");
+		this.addTileEntity( TC_PREFIX + "TileEldritchObelisk");
+		this.addTileEntity( TC_PREFIX + "TileEldritchPortal");
+		this.addTileEntity( TC_PREFIX + "TileBanner");
+		this.addTileEntity( TC_PREFIX + "TileGrate");
+		this.addTileEntity( TC_PREFIX + "TileSpa");
     }
 }

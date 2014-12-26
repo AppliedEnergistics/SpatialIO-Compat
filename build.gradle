@@ -1,3 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'forge'
+
+dependencies {
+    compile ("appeng:appliedenergistics2:rv1-stable-1:dev") {
+        exclude group: "net.industrial-craft", module: "industrialcraft-2"
+        exclude group: "mcp.mobius.waila", module: "Waila"
+        exclude group: "codechicken", module: "ForgeMultipart"
+        exclude group: "codechicken", module: "CodeChickenCore"
+        exclude group: "codechicken", module: "NotEnoughItems"
+    }
+}
+
 buildscript {
     repositories {
         mavenCentral()
@@ -29,9 +42,7 @@ configFile.withReader {
     project.ext.config = new ConfigSlurper().parse prop
 }
 
-apply plugin: 'java'
-apply plugin: 'forge'
-
+sourceCompatibility = JavaVersion.VERSION_1_6
 targetCompatibility = JavaVersion.VERSION_1_6
 
 version="build-$System.env.DRONE_BUILD_NUMBER"
@@ -51,8 +62,8 @@ sourceSets {
         }
         resources {
             srcDir 'src/main/resources/'
-		  }
-	 }
+        }
+    }
 }
 
 processResources

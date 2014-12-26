@@ -1,6 +1,8 @@
 package spatialiocompat.modules;
 
 import spatialiocompat.core.SIOBaseModule;
+import spatialiocompat.core.SIOCompatMarker;
+
 
 /**
  * Carpenters Blocks
@@ -12,8 +14,14 @@ import spatialiocompat.core.SIOBaseModule;
  */
 public class CarpenterBlocks extends SIOBaseModule
 {
-    public static void register()
+	public CarpenterBlocks( SIOCompatMarker marker )
+	{
+		super( "CarpentersBlocks", marker );
+	}
+
+	@Override
+	public void register()
     {
-        addTileEntity("carpentersblocks.tileentity.TEBase");
+		this.addTileEntity("carpentersblocks.tileentity.TEBase");
     }
 }
