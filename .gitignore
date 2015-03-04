@@ -1,15 +1,21 @@
-.gradle
-build
-eclipse
-CREDITS-fml.txt
-forge-*
-LICENSE-fml.txt
-MinecraftForge-*
-README.txt
-src/main/java/com
-.classpath
-.project
-.settings
-*.iml
-*.ipr
-*.iws
+# exclude all
+/*
+
+# include important folders
+# need gradle 
+!gradle/
+!gradlew
+!gradlew.bat
+!build.gradle
+!build.properties
+
+# include markdowns
+!README.md
+!License.md
+
+# include sourcecode
+!src/
+
+# include git important files
+!.gitmodules
+!.gitignore

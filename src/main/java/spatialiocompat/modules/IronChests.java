@@ -1,6 +1,8 @@
 package spatialiocompat.modules;
 
 import spatialiocompat.core.SIOBaseModule;
+import spatialiocompat.core.SIOCompatMarker;
+
 
 /**
  * Iron Chests
@@ -12,8 +14,14 @@ import spatialiocompat.core.SIOBaseModule;
  */
 public class IronChests extends SIOBaseModule
 {
-    public static void register()
+	public IronChests( SIOCompatMarker marker )
+	{
+		super( "IronChest", marker );
+	}
+
+	@Override
+	public void register()
     {
-    	addTileEntity("cpw.mods.ironchest.TileEntityIronChest");
+		this.addTileEntity("cpw.mods.ironchest.TileEntityIronChest");
     }
 }

@@ -1,23 +1,25 @@
 package spatialiocompat.core;
 
+
+import java.util.Collection;
 import java.util.LinkedList;
-import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
 import cpw.mods.fml.common.ICrashCallable;
 
+
 /**
  * Provides transparency in the crash log so other mod-devs can see if their tiles are enabled or not.
  */
-public class SIOCompatMarker implements ICrashCallable {
+public final class SIOCompatMarker implements ICrashCallable
+{
+	private final Collection<String> list = new LinkedList<String>();
 
-	List<String> list = new LinkedList();
-	
 	@Override
 	public String call() throws Exception
 	{
-		return StringUtils.join( list, ", " );
+		return StringUtils.join( this.list, ", " );
 	}
 
 	@Override
@@ -26,8 +28,8 @@ public class SIOCompatMarker implements ICrashCallable {
 		return "Spatial IO Compat";
 	}
 
-	public void add(String tileEntityPath) {
-		list.add( tileEntityPath );
+	public void add( String tileEntityPath )
+	{
+		this.list.add( tileEntityPath );
 	}
-
 }
