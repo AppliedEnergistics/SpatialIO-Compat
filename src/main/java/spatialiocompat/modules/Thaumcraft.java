@@ -34,6 +34,7 @@ public class Thaumcraft extends SIOBaseModule
 		this.addTileEntity( TC_PREFIX + "TileArcaneLampGrowth");
 		this.addTileEntity( TC_PREFIX + "TileArcaneLampLight");
 		this.addTileEntity( TC_PREFIX + "TileArcaneWorkbench");
+		this.addTileEntity( TC_PREFIX + "TileBanner");
 		this.addTileEntity( TC_PREFIX + "TileBellows");
 		this.addTileEntity( TC_PREFIX + "TileBrainbox");
 		this.addTileEntity( TC_PREFIX + "TileCentrifuge");
@@ -41,6 +42,13 @@ public class Thaumcraft extends SIOBaseModule
 		this.addTileEntity( TC_PREFIX + "TileCrucible");
 		this.addTileEntity( TC_PREFIX + "TileCrystal");
 		this.addTileEntity( TC_PREFIX + "TileDeconstrucionTable");
+		this.addTileEntity( TC_PREFIX + "TileEldritchAltar");
+		this.addTileEntity( TC_PREFIX + "TileEldritchCap");
+		this.addTileEntity( TC_PREFIX + "TileEldritchObelisk");
+		this.addTileEntity( TC_PREFIX + "TileEldritchPortal");
+		this.addTileEntity( TC_PREFIX + "TileGrate");
+		this.addTileEntity( TC_PREFIX + "TileInfustionMatrix");
+		this.addTileEntity( TC_PREFIX + "TileInfustionPillar");
 		this.addTileEntity( TC_PREFIX + "TileJar");
 		this.addTileEntity( TC_PREFIX + "TileLifter");
 		this.addTileEntity( TC_PREFIX + "TileMagicBox");
@@ -50,24 +58,17 @@ public class Thaumcraft extends SIOBaseModule
 		this.addTileEntity( TC_PREFIX + "TileNitor");
 		this.addTileEntity( TC_PREFIX + "TileNode");
 		this.addTileEntity( TC_PREFIX + "TileNodeStabilizer");
+		this.addTileEntity( TC_PREFIX + "TilePedestal");
+		this.addTileEntity( TC_PREFIX + "TileResearchTable");
+		this.addTileEntity( TC_PREFIX + "TileSpa");
+		this.addTileEntity( TC_PREFIX + "TileTable");
 		this.addTileEntity( TC_PREFIX + "TileSensor");
 		this.addTileEntity( TC_PREFIX + "TileTube");
 		this.addTileEntity( TC_PREFIX + "TileTubeBuffer");
 		this.addTileEntity( TC_PREFIX + "TileWandPedestal");
+		this.addTileEntity( TC_PREFIX + "TileWarded");
+		
 
-		/**
-		 * Added since the new 4.2.2.1 version and before
-		 *
-		 * Tested by TCzelusniak
-		 *
-		 * Friday, December 26, 2014
-		 */
-		this.addTileEntity( TC_PREFIX + "TileEldritchAltar");
-		this.addTileEntity( TC_PREFIX + "TileEldritchCap");
-		this.addTileEntity( TC_PREFIX + "TileEldritchObelisk");
-		this.addTileEntity( TC_PREFIX + "TileEldritchPortal");
-		this.addTileEntity( TC_PREFIX + "TileBanner");
-		this.addTileEntity( TC_PREFIX + "TileGrate");
-		this.addTileEntity( TC_PREFIX + "TileSpa");
+		
     }
 }

@@ -28,5 +28,6 @@ public class BigReactors extends SIOBaseModule
 	public void register()
 	{
 		this.addTileEntity( "erogenousbeef.core.multiblock.MultiblockTileEntityBase" );
+		this.addTileEntity( "erogenousbeef.bigreactors.common.tileentity.TileEntityCyaniteReprocessor" );
 	}
 }
