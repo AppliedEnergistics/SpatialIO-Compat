@@ -2,7 +2,8 @@ apply plugin: 'java'
 apply plugin: 'forge'
 
 dependencies {
-    compile ("appeng:appliedenergistics2:rv1-stable-1:dev") {
+    compile ("appeng:appliedenergistics2:rv2-beta-28:dev") {
+    	transitive = false
         exclude group: "net.industrial-craft", module: "industrialcraft-2"
         exclude group: "mcp.mobius.waila", module: "Waila"
         exclude group: "codechicken", module: "ForgeMultipart"
