@@ -13,12 +13,15 @@ import com.google.common.collect.Lists;
 
 import spatialiocompat.core.SIOCompatMarker;
 import spatialiocompat.core.SIOModule;
+import spatialiocompat.modules.AsieLib;
 import spatialiocompat.modules.BigReactors;
 import spatialiocompat.modules.BloodMagic;
 import spatialiocompat.modules.CarpenterBlocks;
+import spatialiocompat.modules.Chisel2;
 import spatialiocompat.modules.CoFHCore;
 import spatialiocompat.modules.EnderIO;
 import spatialiocompat.modules.Galacticraft;
+import spatialiocompat.modules.HardcoreEnderExpansion;
 import spatialiocompat.modules.IronChests;
 import spatialiocompat.modules.Jabba;
 import spatialiocompat.modules.Mekanism;
@@ -64,6 +67,9 @@ public class SIOCompat
 		final SIOModule Galacticraft = new Galacticraft( marker );
 		final SIOModule Railcraft = new Railcraft( marker );
 		final SIOModule CoFHCore = new CoFHCore( marker );
+		final SIOModule AsieLib = new AsieLib( marker );
+		final SIOModule Chisel2 = new Chisel2( marker );
+		final SIOModule HardcoreEnderExpansion = new HardcoreEnderExpansion( marker );
 		
 		this.modules = Lists.newArrayList(
 				bigReactors,
@@ -78,7 +84,10 @@ public class SIOCompat
 				OpenComputers,
 				Galacticraft,
 				Railcraft,
-				CoFHCore
+				CoFHCore,
+				AsieLib,
+				Chisel2,
+				HardcoreEnderExpansion
 		);
 	}
 
