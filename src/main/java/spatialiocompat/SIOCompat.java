@@ -29,6 +29,7 @@ import spatialiocompat.modules.OpenComputers;
 import spatialiocompat.modules.OpenModsLib;
 import spatialiocompat.modules.Railcraft;
 import spatialiocompat.modules.Thaumcraft;
+import spatialiocompat.modules.TwilightForest;
 
 
 @Mod( modid = SIOCompat.MOD_ID, name = SIOCompat.MOD_NAME, version = SIOCompat.MOD_VERSION, dependencies = SIOCompat.MOD_DEPENDENCIES )
@@ -70,6 +71,8 @@ public class SIOCompat
 		final SIOModule AsieLib = new AsieLib( marker );
 		final SIOModule Chisel2 = new Chisel2( marker );
 		final SIOModule HardcoreEnderExpansion = new HardcoreEnderExpansion( marker );
+		final SIOModule TwilightForest = new TwilightForest( marker );
+		
 		
 		this.modules = Lists.newArrayList(
 				bigReactors,
@@ -87,7 +90,8 @@ public class SIOCompat
 				CoFHCore,
 				AsieLib,
 				Chisel2,
-				HardcoreEnderExpansion
+				HardcoreEnderExpansion,
+				TwilightForest
 		);
 	}
 
