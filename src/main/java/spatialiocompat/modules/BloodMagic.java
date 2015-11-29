@@ -21,21 +21,20 @@ public class BloodMagic extends SIOBaseModule
 	@Override
 	public void register()
 	{
-//		Disabled for now since not throughly tested
-//		this.addTileEntity( BM_API_PREFIX + "TileSegmentedReagentHandler" );
-//		this.addTileEntity( BM_API_PREFIX + "TileReagentHandler" );
-//		this.addTileEntity( BM_TE_PREFIX + "TEAltar" );
-//		this.addTileEntity( BM_TE_PREFIX + "TEHomHeart" );
-//		this.addTileEntity( BM_TE_PREFIX + "TEImperfectRitualStone" );
-//		this.addTileEntity( BM_TE_PREFIX + "TEMasterStone" );
-//		this.addTileEntity( BM_TE_PREFIX + "TEOrientable" );
-//		this.addTileEntity( BM_TE_PREFIX + "TEPedestal" );
-//		this.addTileEntity( BM_TE_PREFIX + "TEPlinth" );
-//		this.addTileEntity( BM_TE_PREFIX + "TESchematicSaver" );
-//		this.addTileEntity( BM_TE_PREFIX + "TESocket" );
-//		this.addTileEntity( BM_TE_PREFIX + "TESpectralBlock" );
-//		this.addTileEntity( BM_TE_PREFIX + "TESpectralContainer" );
-//		this.addTileEntity( BM_TE_PREFIX + "TETeleposer" );
-//		this.addTileEntity( BM_TE_PREFIX + "TEWritingTable" );
+		this.addTileEntity( BM_API_PREFIX + "TileSegmentedReagentHandler" );
+		this.addTileEntity( BM_API_PREFIX + "TileReagentHandler" );
+		this.addTileEntity( BM_TE_PREFIX + "TEAltar" );
+		this.addTileEntity( BM_TE_PREFIX + "TEHomHeart" );
+		this.addTileEntity( BM_TE_PREFIX + "TEImperfectRitualStone" );
+		this.addTileEntity( BM_TE_PREFIX + "TEMasterStone" );
+		this.addTileEntity( BM_TE_PREFIX + "TEOrientable" );
+		this.addTileEntity( BM_TE_PREFIX + "TEPedestal" );
+		this.addTileEntity( BM_TE_PREFIX + "TEPlinth" );
+		this.addTileEntity( BM_TE_PREFIX + "TESchematicSaver" );
+		this.addTileEntity( BM_TE_PREFIX + "TESocket" );
+		this.addTileEntity( BM_TE_PREFIX + "TESpectralBlock" );
+		this.addTileEntity( BM_TE_PREFIX + "TESpectralContainer" );
+		this.addTileEntity( BM_TE_PREFIX + "TETeleposer" );
+		this.addTileEntity( BM_TE_PREFIX + "TEWritingTable" );
 	}
 }
