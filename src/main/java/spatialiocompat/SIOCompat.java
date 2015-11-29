@@ -10,15 +10,26 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 
 import com.google.common.collect.Lists;
+
 import spatialiocompat.core.SIOCompatMarker;
 import spatialiocompat.core.SIOModule;
+import spatialiocompat.modules.AsieLib;
 import spatialiocompat.modules.BigReactors;
 import spatialiocompat.modules.BloodMagic;
 import spatialiocompat.modules.CarpenterBlocks;
+import spatialiocompat.modules.Chisel2;
+import spatialiocompat.modules.CoFHCore;
+import spatialiocompat.modules.EnderIO;
+import spatialiocompat.modules.Galacticraft;
+import spatialiocompat.modules.HardcoreEnderExpansion;
 import spatialiocompat.modules.IronChests;
 import spatialiocompat.modules.Jabba;
+import spatialiocompat.modules.Mekanism;
+import spatialiocompat.modules.OpenComputers;
 import spatialiocompat.modules.OpenModsLib;
+import spatialiocompat.modules.Railcraft;
 import spatialiocompat.modules.Thaumcraft;
+import spatialiocompat.modules.TwilightForest;
 
 
 @Mod( modid = SIOCompat.MOD_ID, name = SIOCompat.MOD_NAME, version = SIOCompat.MOD_VERSION, dependencies = SIOCompat.MOD_DEPENDENCIES )
@@ -51,7 +62,18 @@ public class SIOCompat
 		final SIOModule jabba = new Jabba( marker );
 		final SIOModule openModsLib = new OpenModsLib( marker );
 		final SIOModule thaumcraft = new Thaumcraft( marker );
-
+		final SIOModule mekanism = new Mekanism( marker );
+		final SIOModule EnderIO = new EnderIO( marker );
+		final SIOModule OpenComputers = new OpenComputers( marker );
+		final SIOModule Galacticraft = new Galacticraft( marker );
+		final SIOModule Railcraft = new Railcraft( marker );
+		final SIOModule CoFHCore = new CoFHCore( marker );
+		final SIOModule AsieLib = new AsieLib( marker );
+		final SIOModule Chisel2 = new Chisel2( marker );
+		final SIOModule HardcoreEnderExpansion = new HardcoreEnderExpansion( marker );
+		final SIOModule TwilightForest = new TwilightForest( marker );
+		
+		
 		this.modules = Lists.newArrayList(
 				bigReactors,
 				bloodMagic,
@@ -59,7 +81,17 @@ public class SIOCompat
 				ironChests,
 				jabba,
 				openModsLib,
-				thaumcraft
+				thaumcraft,
+				mekanism,
+				EnderIO,
+				OpenComputers,
+				Galacticraft,
+				Railcraft,
+				CoFHCore,
+				AsieLib,
+				Chisel2,
+				HardcoreEnderExpansion,
+				TwilightForest
 		);
 	}
 
