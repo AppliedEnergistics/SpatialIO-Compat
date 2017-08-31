@@ -4,9 +4,11 @@ package spatialiocompat.core;
 import java.util.Collection;
 import java.util.LinkedList;
 
+import net.minecraftforge.fml.common.ICrashCallable;
+
 import org.apache.commons.lang3.StringUtils;
 
-import cpw.mods.fml.common.ICrashCallable;
+
 
 
 /**
