@@ -1,19 +1,8 @@
-apply plugin: 'java'
-apply plugin: 'forge'
-
-dependencies {
-    compile ("appeng:appliedenergistics2:rv1-stable-1:dev") {
-        exclude group: "net.industrial-craft", module: "industrialcraft-2"
-        exclude group: "mcp.mobius.waila", module: "Waila"
-        exclude group: "codechicken", module: "ForgeMultipart"
-        exclude group: "codechicken", module: "CodeChickenCore"
-        exclude group: "codechicken", module: "NotEnoughItems"
-    }
-}
+defaultTasks 'fullBuild'
 
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
         maven {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
@@ -24,8 +13,53 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
     }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+repositories {
+    maven {
+        name 'ForgeFS'
+        url 'http://files.minecraftforge.net/maven'
+    }
+    maven {
+        name 'amadornes'
+        url 'http://maven.amadornes.com/'
+    }
+    maven {
+        name 'prog'
+        url 'http://dvs1.progwml6.com/files/maven'
+    }
+    maven {
+        name 'tesla'
+        url 'http://maven.epoxide.org'
+    }
+    maven {
+        name 'curseforge'
+        url 'https://minecraft.curseforge.com/api/maven/'
+    }
+    maven {
+        name 'opencomputers'
+        url 'http://maven.cil.li/'
+    }
+    maven {
+        name 'hwyla'
+        url 'http://tehnut.info/maven'
+    }
+    maven {
+        name 'CoFH Maven'
+        url = 'http://maven.covers1624.net'
+    }
+    maven {
+        name 'buildcraft'
+        url 'https://mod-buildcraft.com/maven/'
+    }
+}
+
+dependencies {
+    compile ("appeng:appliedenergistics2:rv5-alpha-4")
 }
 
 configurations.all {
@@ -42,17 +76,19 @@ configFile.withReader {
     project.ext.config = new ConfigSlurper().parse prop
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_6
-targetCompatibility = JavaVersion.VERSION_1_6
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 version="build-$System.env.DRONE_BUILD_NUMBER"
 group = config.group
 archivesBaseName = config.archivesBaseName
 
 minecraft {
-   version = config.minecraft_version + "-" + config.forge_version
-    
-	 replace "@version@", project.version
+    version = config.minecraft_version + "-" + config.forge_version
+    mappings = "${config.mappings_version}"
+    runDir = "run"
+    useDepAts = true
+    replace "@version@", project.version
 }
 
 sourceSets {

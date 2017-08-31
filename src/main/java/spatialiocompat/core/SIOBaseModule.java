@@ -1,7 +1,6 @@
 package spatialiocompat.core;
 
-
-import cpw.mods.fml.common.event.FMLInterModComms;
+import net.minecraftforge.fml.common.event.FMLInterModComms;
 
 
 /**
